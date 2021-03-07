@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  padding: 20px;
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -35,4 +37,25 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.results{
+    display: none;
+}
+
+@media (min-width: 768px){
+    .results{
+        display: block;
+    }
+}
+
+.overflowx{
+    overflow-x: auto;
+}
+
+.stock-card{
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+    align-items: center;    
 }
